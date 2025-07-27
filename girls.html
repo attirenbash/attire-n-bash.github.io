@@ -24,8 +24,8 @@
         }
 
         #header-img {
-            width: 100%;
-            height: auto;
+            width: 30%;
+            height: 30%;
         }
 
         main {
@@ -38,56 +38,56 @@
             margin-bottom: 20px;
         }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
+        .category {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
         }
 
-        .gallery img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+        .category-item {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 40px;
+            border-radius: 5px;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            width: 200px;
+            text-align: center;
         }
 
-        .gallery img:hover {
-            transform: scale(1.1);
+        .category-item:hover {
+            background-color: #ff4e3a;
         }
 
-        @media (max-width: 768px) {
-            .gallery {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
+        .category-item h2 {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-    
+    <header>
+        <img src="download.jpg" alt="Attire n Bash Logo" id="header-img">
+    </header>
 
     <main>
-        <h1>Lehengas for Girls</h1>
-        <div class="gallery">
-            <img src="d2.jpg" alt="Lehenga 1" loading="lazy">
-            <img src="d1.jpeg" alt="Lehenga 2" loading="lazy">
-            <img src="d3.png" alt="Lehenga 3" loading="lazy">
-            <img src="d4.jpg" alt="Lehenga 1" loading="lazy">
-            <img src="d6.jpg" alt="Lehenga 2" loading="lazy">
-            <img src="d5.png" alt="Lehenga 3" loading="lazy">
-            <img src="d7.png" alt="Lehenga 3" loading="lazy">
-            <!-- Add more images as needed -->
+        <h1>Lehengas for Girls - Attire n Bash</h1>
+
+        <div class="category">
+            <a href="girls_500_700.html" class="category-item">
+                <h2>₹500 - ₹700</h2>
+            </a>
+            <a href="girls_800_1000.html" class="category-item">
+                <h2>₹800 - ₹1000</h2>
+            </a>
+            <a href="girls_1000_above.html" class="category-item">
+                <h2>₹1000 and above</h2>
+            </a>
         </div>
     </main>
 
 </body>
 </html>
+
